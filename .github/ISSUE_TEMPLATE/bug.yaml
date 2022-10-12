@@ -29,7 +29,7 @@ body:
     validations:
       required: true
   - type: dropdown
-      id: bug_bit
+     id: bug_bit
         attritubes:
           label: On What Bit System Do you have this Bug?
           options:
