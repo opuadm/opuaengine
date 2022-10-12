@@ -10,20 +10,30 @@ body:
         
         Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
   - type: textarea
-    id: bug_title
+    id: bug_desc
     attributes:
-      label: Bug Title
+      label: Bug Description
       description: What happened?
     validations:
       required: true
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to reproduce
-      description: Which steps do we need to take to reproduce this error?
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
-      render: shell
+  - type: dropdown
+    id: bug_os
+    attritubes:
+      label: On what operating system did you get this bug?
+      options:
+        - Windows 7
+        - Windows 8
+        - Windows 8.1
+        - Windows 10
+        - Windows 11
+    validations:
+      required: true
+  - type: dropdown
+    id: bug_bit
+    attritubes:
+      label: On What Bit System Do you have this Bug?
+      options:
+        - 32 bit
+        - 64 bit
+    validations:
+      required: true
